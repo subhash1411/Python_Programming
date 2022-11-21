@@ -1,0 +1,6 @@
+''' Write a python program to print Division of two numbers '''
+a=int(input("Enter a value:"))
+b=int(input("Enter b value:"))
+print(" 1.Division of two number=",a//b)
+print(" 2.Division with decimal of two number=",a/b)
+print(" 3.Modular Division of two number=",a%b)
