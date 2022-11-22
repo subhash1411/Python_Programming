@@ -1,0 +1,6 @@
+# Write a program to print swapping of two numbers without using third variable.
+a=int(input("Enter A value:"))
+b=int(input("Enter B value:"))
+print("Before Swapping A=",a,"  B=",b)
+a,b = b,a
+print("After Swapping A=",a,"  B=",b)
