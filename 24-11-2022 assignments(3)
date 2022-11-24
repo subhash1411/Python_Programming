@@ -1,0 +1,12 @@
+sno=int(input("Enter Sno:"))
+name=input("Enter name:")
+group=input("Enter Group:")
+s1=int(input("Enter Subject-1 marks:"))
+s2=int(input("Enter Subject-2 marks:"))
+s3=int(input("Enter Subject-3 marks:"))
+if s1>35 and s2>35 and s3>35:
+    print("\n\t\tPASS")
+    print("\t\t",sno,name,group,"Total marks=",s1+s2+s3)
+else:
+    print("\n\t\tFail")
+    print("\t\t",sno,name,group,"Total marks=",s1+s2+s3)
