@@ -1,0 +1,10 @@
+list=[]
+n=int(input("Enter n value:"))
+print("Enter list elements:")
+for i in range(n):
+    list.append(int(input()))
+ele=list[0]
+for i in range(1,n):
+    if ele>list[i]:
+        ele=list[i]
+print("Smallest number is ",ele)
