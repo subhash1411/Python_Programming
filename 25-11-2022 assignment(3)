@@ -1,0 +1,11 @@
+list=[]
+n=int(input("Enter n value:"))
+print("Enter list elements:")
+for i in range(n):
+    list.append(int(input()))
+sum=0
+for i in range(n):
+    if list[i]%2==0:
+        sum+=list[i]
+print("Sum of the even number in list is ",sum)
+
