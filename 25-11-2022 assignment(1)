@@ -1,0 +1,9 @@
+list=[]
+n=int(input("Enter n value:"))
+for i in range(n):
+    list.append(int(input()))
+ele=int(input("Enter Element:"))
+if ele in list:
+    print("Element is found")
+else:
+    print("Element is not found")
