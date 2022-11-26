@@ -1,0 +1,5 @@
+a=int(input("Enter A value:"))
+b=int(input("Enter B value:"))
+print("Bitwise AND : ",a&b)
+print("Bitwise OR : ",a|b)
+print("Bitwise XOR : ",a^b)
