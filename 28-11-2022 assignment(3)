@@ -1,0 +1,8 @@
+bal=10000
+amn=int(input("Enter a number:"))
+if bal<amn:
+    print("Withdraw amount is more than balance")
+    print("Try another amount")
+else:
+    print("Credited amount:",amn)
+    print("Main balance:",bal-amn)
