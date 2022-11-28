@@ -1,0 +1,8 @@
+pin=1590
+chk=int(input("Enter your 4-digits code:"))
+if pin == chk:
+    print("Pin is valid")
+    print("Continue the transaction process")
+else:
+    print("Incorrect pin")
+    print("Try again later")
