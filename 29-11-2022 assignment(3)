@@ -1,0 +1,10 @@
+sno=int(input("Enter Roll NO:"))
+sname=input("Enter name:")
+group=input("Enter Group name:")
+s1=int(input("Enter SUB-1 marks:"))
+s2=int(input("Enter SUB-2 marks:"))
+s3=int(input("Enter SUB-3 marks:"))
+if s1>=35 and s2>=35 and s3>=35:
+    print("\t\t\tPASS")
+else:
+    print("\t\t\tFAIL")
