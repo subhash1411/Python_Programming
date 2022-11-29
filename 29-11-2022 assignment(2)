@@ -1,0 +1,25 @@
+empno=int(input("Enter EMPNO:"))
+ename=input("Enter Emp name:")
+edesig=input("Enter designation:")
+bs=int(input("Enter basic salary:"))
+da=int(input("Enter Daily allowances:"))
+ta=int(input("Enter Travel allowances:"))
+hra=int(input("Enter House rent allowances:"))
+netsal=bs+da+ta+hra
+t=0
+if netsal>100000:
+    tax=netsal*(10/100)
+elif netsal>50000:
+    tax=netsal*(7/100)
+elif netsal>40000:
+    tax=netsal*(4/100)
+elif netsal>20000:
+    tax=netsal*(2/100)
+else:
+    t=1
+
+if t==1:
+    print("tax = 0")
+else:
+    print("Tax = ",tax)
+    
