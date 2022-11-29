@@ -1,0 +1,12 @@
+a=int(input("A value:"))
+b=int(input("B value:"))
+c=int(input("C value:"))
+d=int(input("D value:"))
+if(a>b and a>c and a>d):
+    print("A({}) is big".format(a))
+elif(b>c and b>d):
+    print("B({}) is big".format(b))
+elif(c>d):
+    print("C({}) is big".format(c))
+else:
+    print("D({}) is big".format(d))
