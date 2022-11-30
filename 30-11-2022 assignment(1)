@@ -1,0 +1,24 @@
+sug,rice,salt,chilly,tur=450,550,200,120,500
+cuspno=int(input("Enter Cus Phone number:"))
+name=input("Enter name:")
+add=input("Enter Address:")
+sg=int(input("Enter Quantities of Sugar in K.G:"))
+rc=int(input("Enter Quantities of Rice in K.G:"))
+st=int(input("Enter Quantities of Salt in K.G:"))
+ch=int(input("Enter Quantities of Chilly powder in K.G:"))
+tr=int(input("Enter Quantities of Turmeric in K.G:"))
+bill=(sg*sug)+(rc*rice)+(st*salt)+(ch*chilly)+(tr*tur)
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+print("\n",cuspno,"\n",name,"\n",add)
+print("Bill amount =",bill)
+print("Tax  amount =",tax)
+print("Total amount=",tax+bill)
