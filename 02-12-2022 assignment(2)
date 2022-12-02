@@ -1,0 +1,31 @@
+#WAY-1
+def biggest(age):
+    if(age>=18):
+        print("\t\tEligible for vote")
+    else:
+        print("\t\tNot Eligible for vote")
+age=int(input("Enter Age:"))
+biggest(age)
+
+
+#WAY-2
+def biggest(age):
+    if(age>=18):
+        return "\t\tEligible for vote"
+    else:
+        return "\t\tNot Eligible for vote"
+age=int(input("Enter Age:"))
+print(biggest(age))
+
+
+#WAY-3
+def biggest(age):
+    if(age>=18):
+        return True
+    else:
+        return False
+age=int(input("Enter Age:"))
+if(biggest(age)):
+    print("\t\tEligible for vote")
+else:
+    print("\t\tNot Eligible for vote")
