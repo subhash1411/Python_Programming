@@ -1,0 +1,34 @@
+#WAY-1
+def biggest(a,b):
+    if(a>b):
+        print("A is big")
+    else:
+        print("B is big")
+a=int(input("Enter A value:"))
+b=int(input("Enter B value:"))
+biggest(a,b)
+
+
+#WAY-2
+def biggest(a,b):
+    if(a>b):
+        return "A is big"
+    else:
+        return "B is big"
+a=int(input("Enter A value:"))
+b=int(input("Enter B value:"))
+print(biggest(a,b))
+
+
+#WAY-3
+def biggest(a,b):
+    if(a>b):
+        return True
+    else:
+        return False
+a=int(input("Enter A value:"))
+b=int(input("Enter B value:"))
+if(biggest(a,b)):
+    print("A is big")
+else:
+    print("B is big")
