@@ -1,0 +1,11 @@
+n=int(input("Enter n value:"))
+big=int(input("Enter a element:"))
+small=big
+while(n-1>0):
+    num=int(input("Enter a element:"))
+    if num>big:
+        big=num
+    if num<small:
+        small=num
+    n-=1
+print("Differnce between Biggest and Smallest number is :",big-small)        
