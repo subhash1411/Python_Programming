@@ -1,0 +1,11 @@
+num=int(input("Enter the last value:"))
+count=0
+for n in range(2,num+1):
+    fac=0
+    for i in range(2,n):
+        if n%i==0:
+            fac+=1
+            break
+    if fac==0:
+        count+=1
+print("Number of prime number are :",count)        
