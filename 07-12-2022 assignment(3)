@@ -1,0 +1,19 @@
+def happy(num):
+    sum=0
+    while(num>0):
+        r=num%10
+        sum+=r*r
+        num//=10
+    return sum
+
+
+
+num=int(input("Enter a number:"))
+n=num
+sum=0
+while(num>9):
+    num=happy(num)
+if num==1 or num==7:
+    print("HAPPY NUMBER")
+else:
+    print("NOT A HAPPY NUMBER")
