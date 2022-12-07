@@ -1,0 +1,16 @@
+def factorial(num):
+    f=1
+    while(num>0):
+        f=f*num
+        num-=1
+    return f
+
+
+
+num=int(input("Enter a ending factorial number:"))
+n=num
+sum=0
+while(num>0):
+    sum+=factorial(num)
+    num-=1
+print("Sum of %d factorial numbers:"%(n),sum)
