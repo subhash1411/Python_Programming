@@ -1,0 +1,8 @@
+num=int(input("Enter a ending number:"))
+a,b=0,1
+print("Fibonacci series :",a,b,end="  ")
+while True:
+    a,b=b,a+b
+    if b>num:
+        break
+    print(b,end="  ")
