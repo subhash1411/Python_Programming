@@ -1,0 +1,7 @@
+n=int(input("Enter size of list:"))
+print("Enter Elements into LIST:")
+l=[]
+for i in range(0,n):
+    l.append(int(input()))
+print("Values based on the Index values:")
+print("0th :",l[0],"\n2nd :",l[2],"\n4th :",l[4])
