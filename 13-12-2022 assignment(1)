@@ -1,0 +1,10 @@
+n=int(input("Enter No. of District:"))
+print("Enter District Name into LIST:")
+s=[]
+for i in range(0,n):
+    str=input()
+    s.append(str)
+str=[]
+str=sorted(s)
+for i in range(0,n):
+    print(str[i])
