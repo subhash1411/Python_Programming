@@ -1,0 +1,13 @@
+n=int(input("Enter size of list:"))
+print("Enter Elements into LIST:")
+s=[]
+for i in range(0,n):
+    str=int(input())
+    s.append(str)
+for i in range(0,n):
+    for j in range(i+1,n):
+        if s[i]<s[j]:
+            temp=s[i]
+            s[i]=s[j]
+            s[j]=temp
+print("Descending order of given list is :",s)
