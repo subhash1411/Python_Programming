@@ -1,0 +1,17 @@
+n=int(input("Enter size of list:"))
+print("Enter Elements into LIST:")
+num=[]
+for i in range(0,n):
+    str=int(input())
+    num.append(str)
+p=[]
+n=[]
+for i in num:
+    if i>0:
+        p.append(i)
+    else:
+        n.append(i)
+print("Before Separation :",num)
+num.clear()
+num=p+n
+print("After Separation :",num)
