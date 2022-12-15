@@ -1,0 +1,18 @@
+n=int(input("Enter size of list:"))
+print("Enter Elements into LIST:")
+num=[]
+for i in range(0,n):
+    str=int(input())
+    num.append(str)
+tar=int(input("Enter Target value:"))
+c=0
+for i in num:
+    for j in num:
+        if i+j==tar:
+            c=1
+            print(i,"+",j,"=",tar)
+            break
+if c==1:
+    print("YES")
+else:
+    print("NO")
