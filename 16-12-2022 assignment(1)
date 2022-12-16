@@ -1,0 +1,8 @@
+str=input("Enter a string:")
+print("(a).Characters of given string is :",end=" ")
+for i in str:
+    print(i,end="   ")
+    
+print("\n(b).convert from upper to lower:",str.lower())
+print("(c).convert from lower to upper:",str.upper())
+print("(d).convert lower to upper and upper to lower :",str.upper(),"AND",str.lower())
