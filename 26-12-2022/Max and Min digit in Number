@@ -1,0 +1,16 @@
+num=int(input("Enter a number:"))
+if num<10:
+    print("Given number is only single Digited", num)
+else:
+    min=num%10
+    max=min
+    num//=10
+    while num>0:
+        rem=num%10
+        if rem>max:
+            max=rem
+        if rem<min:
+            min=rem
+        num//=10
+    print("Maximun number is :",max)
+    print("Minimun number is :",min)
