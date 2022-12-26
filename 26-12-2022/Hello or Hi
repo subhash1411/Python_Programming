@@ -1,0 +1,6 @@
+from math import*
+num=int(input("Enter a number:"))
+if sqrt(num)>10:
+    print("Hello")
+else:
+    print("Hi")
