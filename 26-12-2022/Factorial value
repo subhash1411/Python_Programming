@@ -1,0 +1,7 @@
+num=int(input("Enter a factorial number:"))
+f=1
+t=num
+while num>0:
+    f=f*num
+    num-=1
+print("Factorial of given number is :",t,"=",f)
