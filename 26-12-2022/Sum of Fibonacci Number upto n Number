@@ -1,0 +1,10 @@
+num=int(input("Enter a number:"))
+a,b=0,1
+sum=a+b
+for i in range(0,num-2):
+    a,b=b,a+b
+    sum+=b
+if num==1:
+    print("Sum of the fibonacci series of",num,"is : 0")
+else:
+    print("Sum of the fibonacci series of",num,"is :",sum)
