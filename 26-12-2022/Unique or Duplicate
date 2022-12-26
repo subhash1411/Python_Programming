@@ -1,0 +1,7 @@
+sample=list(map(int,input().split()))
+sample1=set(sample)
+sample1=list(sample1)
+if sample1 == sample:
+    print("Unique")
+else:
+    print("Duplicate")
