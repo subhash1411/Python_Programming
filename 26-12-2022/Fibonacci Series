@@ -1,0 +1,6 @@
+num=int(input("Enter a number:"))
+a,b=0,1
+print("Fibonacci Series:",a,b,end="  ")
+for i in range(0,num-2):
+    a,b=b,a+b
+    print(b,end="  ")
