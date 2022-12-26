@@ -1,0 +1,4 @@
+sample=list(map(int,input().split()))
+maxi=max(sample)
+mini=min(sample)
+print("Difference between Max & Min is :",maxi-mini)
