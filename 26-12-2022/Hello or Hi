@@ -1,0 +1,5 @@
+num=int(input("Enter a number:"))
+if num**2>10:
+    print("Hello")
+else:
+    print("Hi")
