@@ -1,0 +1,19 @@
+sample=list(map(int,input("Enter a values:").split()))
+n=len(sample)
+low,high=0,n-1
+flag=0
+mid=(low+high)//2
+key=int(input("Enter a Searching Element:"))
+while(low<=high):
+    if key==sample[mid]:
+        flag=1
+        break
+    elif key>sample[mid]:
+        low=mid+1
+    else:
+        high=mid-1
+    mid=(low+high)//2
+if flag==1:
+    print("Element is found at index ",mid)
+else:
+    print("Element is not found")
