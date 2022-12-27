@@ -1,0 +1,16 @@
+sample=list(map(int,input("Enter a values:").split()))
+n=len(sample)
+f=0
+index=[]
+key=int(input("Enter a searching Element:"))
+for i in range(0,n):
+    if key==sample[i]:
+        index.append(i)
+        f=1
+if f==0:
+    print("-1\nElement is not found")
+else:
+    print(index)
+    print(key,"is found at index ",end="")
+    for i in index:
+        print(i,end=" and ")
