@@ -1,0 +1,27 @@
+from tkinter import*
+def ADD():
+    res=int(f.get())+int(s.get())
+    st.set(res)
+def SUB():
+    res=int(f.get())-int(s.get())
+    st.set(res)
+def MUL():
+    res=int(f.get())*int(s.get())
+    st.set(res)
+def DIV():
+    res=int(f.get())//int(s.get())
+    st.set(res)
+win=Tk()
+st=StringVar()
+win.title("Calculater")
+ft=Label(win,text="Enter 1st number:").grid(row=0)
+sn=Label(win,text="Enter 2nd number:").grid(row=1)
+f=Entry(win).grid(row=0,column=1)
+s=Entry(win).grid(row=1,column=1)
+Label(win,text="Result:").grid(row=3)
+result=Label(win,text="",textvariable=st).grid(row=3,column=1)
+Button(win,text="ADDITION",command=ADD).grid(row=0,column=2)
+Button(win,text="SUBTRACTION",command=SUB).grid(row=1,column=2)
+Button(win,text="MULPLICATION",command=MUL).grid(row=2,column=2)
+Button(win,text="DIVISION",command=DIV).grid(row=3,column=2)
+mainloop()
