@@ -1,0 +1,10 @@
+sample=list(map(int,input("Enter a values:").split()))
+n=len(sample)
+half=[]
+for i in range(n//2,n):
+    half.append(sample[i])
+half.reverse()
+for i in half:
+      sample.remove(i)
+      sample.append(i)
+print(sample)
