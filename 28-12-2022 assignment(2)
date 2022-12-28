@@ -1,0 +1,8 @@
+num=int(input("Enter a number:"))
+sample=[]
+num-=1
+while num>0:
+    sample.append(num%10)
+    num//=10
+sample.reverse()
+print(sample)
