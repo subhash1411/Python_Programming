@@ -1,0 +1,24 @@
+n,r=input(),input()
+n=list(n)
+r=list(r)
+temp=[]
+for i in n:
+    if i>='0' and i<='9':
+        temp.append(int(i))
+n.clear()        
+n=temp  
+#print(n,temp)
+
+temps=[]
+for i in r:
+    if i>='0' and i<='9':
+        temps.append(int(i))
+r.clear()        
+r=temps
+#print(r)
+
+lf=r[0:n[0]-n[1]]
+ri=r[n[0]-n[1]:n[0]]
+lt=ri+lf
+for i in lt:
+    print(i,end=" ")
