@@ -1,0 +1,15 @@
+r=int(input("Enter a row size:"))
+c=int(input("Enter a column size:"))
+mtx=[]
+print("Enter Matrix elements:")
+left=[]
+for i in range(r):
+    m=[]
+    for j in range(c):
+        num=int(input())
+        m.append(num)
+        if i==j:
+            left.append(num)
+    mtx.append(m)   
+#print(mtx)
+print("Left Diagonal values in Matrix is:",left)
