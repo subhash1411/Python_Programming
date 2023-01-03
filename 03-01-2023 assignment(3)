@@ -1,0 +1,27 @@
+r=int(input("Enter a row size:"))
+c=int(input("Enter a column size:"))
+a=0
+if r==c:
+    mtx=[]
+    print("Enter Matrix elements:")
+    left,right=0,0
+    for i in range(r):
+        m=[]
+        for j in range(c):
+            num=int(input())
+            m.append(num)
+        mtx.append(m)
+    for i in range(r):
+        for j in range(c):
+            if i==j:
+                left+=mtx[i][j]
+            if i==a and c-a-1==j:
+                right+=mtx[i][j]
+        a+=1
+    df=left-right
+    if df<0:
+        df*=-1
+    print("Difference B/W Left & Right Diagonals:",df)
+else:
+    print("Impossible to find diagonal values")
+    print("Row value != Column value (",r," != ",c,")")
