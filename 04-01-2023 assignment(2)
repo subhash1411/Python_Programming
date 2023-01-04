@@ -1,0 +1,16 @@
+n=int(input("Enter a row & column size:"))
+array=[]
+print("Enter Elements:")
+for i in range(n):
+    a=[]
+    for j in range(n):
+        a.append(int(input()))
+    array.append(a)
+diagonal=[]
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            diagonal.append(array[i][j])
+        elif i+j==n-1:
+            diagonal.append(array[i][j])
+print(diagonal)
