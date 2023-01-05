@@ -1,0 +1,17 @@
+n=int(input("Enter Row & Column size:"))
+l=[]
+for i in range(n):
+    a=[]
+    for j in range(n):
+        a.append(int(input()))
+    l.append(a)
+#print(max(l))
+k=int(input("enter replacing value:"))
+for i in range(n):
+    for j in range(n):
+        if i+j==n-1:
+            l[i][j]=k
+        else:
+            l[i][j]=0
+for i in l:
+    print(i)
