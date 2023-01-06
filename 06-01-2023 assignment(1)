@@ -1,0 +1,12 @@
+arr=list(map(int,input("Enter Elements:").split()))
+n=len(arr)
+for a in range(len(arr)):
+    for i in arr:
+        c=0
+        for j in arr:
+            if i==j:
+                c+=1
+            if c==2:
+                arr.remove(i)
+                break
+print(arr)
