@@ -1,0 +1,7 @@
+email=input("Enter a Mail address:")
+num=input("Enter Mobile Number:")
+if email.endswith("@gmail.com") or email.endswith("@yahoo.com") or email.endswith("@adc.aditya.ac.in"):
+    if (num.startswith('9') or num.startswith('8') or num.startswith('7') or num.startswith('6')) and len(num)==10:
+        print("Registration successully")
+else:
+    print("check your details")
