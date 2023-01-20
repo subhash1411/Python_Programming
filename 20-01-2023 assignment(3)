@@ -1,0 +1,6 @@
+s=input("Enter a text:")
+for i in range(len(s)):
+    if ord(s[i])==97 or ord(s[i])==101 or ord(s[i])==105 or ord(s[i])==111 or ord(s[i])==117:
+        continue
+    else:
+        print(s[i],end="" )
