@@ -1,0 +1,16 @@
+s=input("Enter a text:")
+n=len(s)
+l=[]
+string=''
+for i in range(0,n):
+    s1=s[i]
+    l.append(s1)
+l=list(set(l))
+l.sort()
+for ele in l:
+    k=0
+    for i in range(n):
+        if ele==s[i]:
+            k+=1
+    string+=str(k)+ele
+print(string)
