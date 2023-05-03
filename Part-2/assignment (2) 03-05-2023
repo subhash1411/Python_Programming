@@ -1,0 +1,25 @@
+// write a program to find most repeated character and freequency from the paragraph
+
+para=input("Enter Paragraph:")
+char_count={}#Dictionary for Storing Character Count
+space_count=0
+for i in para:
+    if i==" ":
+        space_count+=1
+        continue
+    else:
+        if i not in char_count:
+            char_count[i]=1
+        else:
+            char_count[i]+=1
+char_count_max=0
+char=''
+for i in char_count:
+    if char_count[i]>char_count_max:
+        char_count_max=char_count[i]
+        char=i
+
+if space_count > char_count_max:
+    print("Spaces count (%d) are more, When compare to Most repeated Character (%c = %d"%(space_count,char,char_count_max),')')
+else:
+    print('Most Repeated Character is :',char,'  (Count is :',char_count_max,')')
