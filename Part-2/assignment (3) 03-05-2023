@@ -1,0 +1,5 @@
+#  write a program to factorial of the given number
+
+from math import*
+num=int(input("Enter a Factorial Number:"))
+print("Factorial of Given number(%d) is : %d"%(num,factorial(num)))
