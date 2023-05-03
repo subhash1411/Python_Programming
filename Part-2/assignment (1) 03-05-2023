@@ -1,0 +1,14 @@
+'''   prepare student result dictionary and display Results '''
+
+n=int(input("Enter Number of Students:"))
+Student={}#Dictionary for Student Results
+for i in range(1,n+1):
+    name,result=input("Enter %d Student Name & Result:"%(i)).split()
+    Student[name]=result
+n_result=int(input("Enter Number of Students Results you want :"))
+for i in range(1,n_result+1):
+    Result_name=input("Enter Student Name:")
+    if Result_name in Student:
+        print(Result_name,Student[Result_name]+"ed the Examination")
+    else:
+        print("No Results Found ")
