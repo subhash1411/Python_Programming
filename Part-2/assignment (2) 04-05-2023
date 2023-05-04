@@ -1,0 +1,21 @@
+# Write a program to print given number is Palindrome or not using Class
+
+class Number:
+    def palindrome(self,num):
+        temp=num[::-1]  # In this Step We Reversing the String
+        if num==temp:
+            return True
+        else:
+            return False
+        
+
+#Input is Taken as Strinng,Because Reversing is esay in Strinngs when Compare to Integers
+num=input("Enter Which number you want to check Palindrome or not :")
+
+o=Number()# Creating Object to the Number Class
+
+if o.palindrome(num):
+    print("Given Number (%d) is Palindrome"%(int(num)))
+else:
+    print("Given Number (%d) is Not a Palindrome"%(int(num)))
+
