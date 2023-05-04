@@ -1,0 +1,20 @@
+#  Write a program to print n Fibonacci series using Class
+
+class Number:
+    def Fibonacci(self,num):
+        print("\n\tFibonacci Serie :",end=" ")
+        a,b=0,1
+        if num==1:
+            print(a)
+        else:
+            print(a, b,end="  ")
+            for i in range(0,num-2):
+                a, b = b, a+b
+                print(b,end="  ")
+
+
+num=int(input("Enter How many Fibonacci series number you want :"))
+
+obj=Number()  #Creating Object to the Number Class
+
+obj.Fibonacci(num)
