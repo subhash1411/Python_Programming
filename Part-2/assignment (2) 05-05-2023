@@ -1,0 +1,29 @@
+#  Write a program to print sum of n prime numbers
+
+import math
+n=int(input("Enter a Number:"))
+n+=1
+sieve=[]
+if n<2:
+    print("No Prime number are available upto this number(",n,")")
+else:
+    for i in range(0,n):
+        sieve.append(1)
+
+    x=int(math.sqrt(n))
+    for i in range(2,x+1):
+        
+        if sieve[i]==1:
+
+            for j in range(i*i,n,i):
+                sieve[j]=0
+
+    
+    count_primes=0
+    sum_primes=0
+    for i in range(2,n):
+        if sieve[i]==1:
+            count_primes+=1
+           
+    print("Number of Prime Number are upto (%d) : %d"%(n-1,count_primes))    
+        
