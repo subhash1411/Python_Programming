@@ -1,0 +1,23 @@
+#  Write a program to print prime number in the given range(exclusive)
+
+import math
+m,n=map(int,input("Enter two Numbers:").split())
+sieve=[]
+if n<=2:
+    print("No Prime number are available upto this number(",n,")")
+else:
+    for i in range(0,n+1):
+        sieve.append(1)
+
+    x=int(math.sqrt(n))
+    for i in range(2,x+1):
+        
+        if sieve[i]==1:
+
+            for j in range(i*i,n+1,i):
+                sieve[j]=0
+
+    print("Prime Number are :",end=" ")
+    for i in range(m+1,n):
+        if sieve[i]==1:
+            print(i,end="  ")
