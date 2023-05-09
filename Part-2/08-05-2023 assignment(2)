@@ -1,0 +1,27 @@
+#  Write a program to print TWIN PRIMES in the given range(inclusive)
+
+import math
+m,n=map(int,input("Enter a Number:").split())
+sieve=[]
+if n<=2:
+    print("No Prime number are available upto this number(",n,")")
+else:
+    for i in range(0,n+1):
+        sieve.append(1)
+
+    x=int(math.sqrt(n))
+    for i in range(2,x+1):
+        
+        if sieve[i]==1:
+
+            for j in range(i*i,n+1,i):
+                sieve[j]=0
+
+    print("TWIN Prime Number are :")
+    c=0
+    for i in range(m,n+1):
+        if i+2<n+1 and sieve[i]==1 and sieve[i+2]==1:
+            print(i,  i+2)   
+            c+=1
+    print("Number of TWIN Prime are :",c)
+        
