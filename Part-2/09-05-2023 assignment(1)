@@ -1,0 +1,11 @@
+#  Write a program to print Prime Factor count for the given number
+
+n=int(input("Enter a number:"))
+count,t=0,2
+while t<=n:
+    if n%t==0:
+        count+=1
+        n//=t
+    else:
+        t+=1
+print("Count of Prime Factors are :",count)
