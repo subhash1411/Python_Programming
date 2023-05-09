@@ -1,0 +1,18 @@
+# write a program to print sum of all the Prime Factors of the different numbers
+
+def prime_fact(n):
+    fact_sum,t=0,2
+    while t<=n:
+        if n%t==0:
+            fact_sum+=t
+            n//=t
+        else:
+            t+=1
+    return fact_sum
+    
+t=int(input("Enter no. of testcases:"))
+prime_fact_sum=0
+for i in range(t):
+    n=int(input("Enter a number:"))
+    prime_fact_sum+=prime_fact(n)
+print("Sum of all Prime Factors are :",prime_fact_sum)
