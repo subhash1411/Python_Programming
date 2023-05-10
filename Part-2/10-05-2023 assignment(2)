@@ -1,0 +1,15 @@
+# Write a program to print Sum of Prime Numbers upto given range
+
+from math import*
+start,end=map(int,input("Enter Starting & Ending ranges of Prime no.:").split())
+ranges=[1]*(end+1)
+ranges[0],ranges[1]=0,0
+for i in range(2,int(sqrt(end+1))+1):
+    if ranges[i]==1:
+        for j in range(i+i,end+1,i):
+            ranges[j]=0
+prime_sum=0
+for i in range(start,end+1):
+    if ranges[i]==1:
+        prime_sum+=i
+print("Sum of Prime Numbers upto given range (%d & %d): %d"%(start,end,prime_sum))
