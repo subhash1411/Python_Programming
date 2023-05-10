@@ -1,0 +1,7 @@
+#     Write a program to print sum of n numbers upto given range
+
+start,end=map(int,input("Enter Starting & Ending ranges:").split())
+ranges=[0]*(end+1)
+for i in range(1,end+1):
+    ranges[i]=ranges[i-1]+i
+print("Different B/W sum of two ranges:"ranges[end]-ranges[start])
