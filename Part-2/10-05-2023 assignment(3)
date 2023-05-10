@@ -1,0 +1,17 @@
+# Write a program to print given number is HAPPY Number or not
+
+def happy_number(n):
+    while n>9:
+        temp=n
+        s=0
+        while temp>0:
+            rem=temp%10
+            s+=rem**2
+            temp//=10
+        n=s
+    return n
+num=int(input("Enter a number to find Happy no. or not:"))
+if happy_number(num)==1 or happy_number(num)==7:
+    print("Given Number is a Happy number",num)
+else:
+    print("Given number is not a Happy Number",num)
