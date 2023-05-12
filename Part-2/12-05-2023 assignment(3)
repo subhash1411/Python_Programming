@@ -1,0 +1,21 @@
+#   Equilibrium Point
+LINK : https://practice.geeksforgeeks.org/problems/equilibrium-point-1587115620/1
+
+class Solution:
+    # Complete this function
+    
+    #Function to find equilibrium point in the array.
+    def equilibriumPoint(self,A, N):
+        # Your code here
+        pf=[0]*(N+1)
+        pf[0]=0
+        for i in range(1,N+1):
+            pf[i]=pf[i-1]+A[i-1]
+        for i in range(1,N+1):
+            if pf[i-1]==(pf[N]-pf[i]):
+                return i
+                break
+        return -1
+A=list(map(int,input().split()))
+a=Solution()
+print(a.equilibriumPoint(A,len(A)))
