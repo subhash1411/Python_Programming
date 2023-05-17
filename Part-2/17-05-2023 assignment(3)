@@ -1,0 +1,21 @@
+#  Minimum Size Subarray Sum
+LINK : https://leetcode.com/problems/minimum-size-subarray-sum/description/
+
+class Solution:
+    def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+        start=0
+        end=0
+        cursum=0
+        minlength=1000000
+        n=len(nums)
+        while end<n:#6<6
+            cursum=cursum+nums[end]
+            end=end+1
+            while start<end and cursum>=target:
+                cursum=cursum-nums[start]
+                start=start+1
+                minlength=min(minlength,end-start+1)
+        if minlength==1000000:
+            return 0
+        else:
+            return  minlength
