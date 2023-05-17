@@ -1,0 +1,13 @@
+# Max Sum Subarray of size K
+LINK : https://practice.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1
+
+class Solution:
+    def maximumSumSubarray (self,K,Arr,N):
+        # code here 
+        max_sum=sum(Arr[:K])
+        cur_sum=max_sum
+        for i in range(0,N-K):  # 0,3
+            cur_sum+=Arr[K+i]-Arr[i]
+            max_sum=max(max_sum,cur_sum)
+            
+        return max_sum
