@@ -1,0 +1,13 @@
+#  GCD of two numbers
+LINK :https://practice.geeksforgeeks.org/problems/gcd-of-two-numbers3459/1
+
+class Solution:
+    def gcd(self, A, B):
+        # code here
+        n=min(A,B)
+        c=1
+        for i in range(2,n+1):
+            if B%i==0:
+                if A%i==0:
+                    c=i
+        return c
