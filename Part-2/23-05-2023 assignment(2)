@@ -1,0 +1,17 @@
+#   Permutations of a given string
+LINK : https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string2041/1
+
+from itertools import*
+class Solution:
+    def find_permutation(self, S):
+        # Code here
+        p=permutations(S)
+        out=[]
+        for i in list(p):
+            x=list(i)
+            s=''
+            for j in x:
+                s+=j
+            if s not in out:
+                out.append(s)
+        return sorted(out)
