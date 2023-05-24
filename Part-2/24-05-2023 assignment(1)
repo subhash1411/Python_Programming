@@ -1,0 +1,12 @@
+LINK : https://www.hackerrank.com/challenges/itertools-permutations/problem?isFullScreen=true
+
+from itertools import*
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+s,n=input().split()
+p=permutations(s,int(n))
+p=sorted(list(p))
+for i in p:
+    s=''
+    for j in i:
+        s+=j
+    print(s)
